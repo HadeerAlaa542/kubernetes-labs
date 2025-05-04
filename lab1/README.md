@@ -8,8 +8,7 @@
 <img width="163" alt="image" src="https://github.com/user-attachments/assets/0e9a3614-ff69-4ec1-b1f8-c20bd9f0d421" />
 <br>
 
-## 3- Create a pod with the name nginx and with the image “nginx123”
-Use a pod-definition file.
+## 3- Create a pod with the name nginx and with the image “nginx123” , Use a pod-definition file.
 <img width="268" alt="image" src="https://github.com/user-attachments/assets/69fc4f72-f2fb-4e07-b20e-46e1ecdf369f" />
 <br>
 <img width="124" alt="image" src="https://github.com/user-attachments/assets/bbfec9f9-ac32-43ec-9d76-f2b111216641" />
@@ -31,10 +30,7 @@ Use a pod-definition file.
 <img width="273" alt="image" src="https://github.com/user-attachments/assets/a8fa496b-3a3e-41a1-a988-7e8979794a63" />
 <br>
 
-## 7- Create a ReplicaSet with
-name= replica-set-1
-image= busybox
-replicas= 3
+## 7- Create a ReplicaSet with name= replica-set-1 , image= busybox , replicas= 3
 <img width="307" alt="image" src="https://github.com/user-attachments/assets/9104c314-1731-469c-abad-7d40fd5a02a7" />
 <br>
 <img width="327" alt="image" src="https://github.com/user-attachments/assets/b7c0e2e8-3c3d-4b76-9f73-928bfc1f076a" />
@@ -54,8 +50,7 @@ replicas= 3
 <img width="294" alt="image" src="https://github.com/user-attachments/assets/90f31c49-8b7b-4ecf-93d9-fe690db1a078" />
 <br>
 
-## 10- Delete any one of the 5 PODs then check How many PODs exist now?
-Why are there still 5 PODs, even after you deleted one?
+## 10- Delete any one of the 5 PODs then check How many PODs exist now? & Why are there still 5 PODs, even after you deleted one?
 Still the same because ReplicaSet checks on them all the time to ensure there are five, and if one is deleted, it will create a new one.
 <img width="376" alt="image" src="https://github.com/user-attachments/assets/5a89b985-40d0-4829-b294-d33527c020d2" />
 <br>
