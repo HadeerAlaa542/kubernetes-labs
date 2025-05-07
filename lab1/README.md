@@ -58,19 +58,43 @@ Still the same because ReplicaSet checks on them all the time to ensure there ar
 <br>
 
  ## 11- How many Deployments and ReplicaSets exist on the system?
- 
+ <img width="406" alt="image" src="https://github.com/user-attachments/assets/a51206b7-686e-4f35-8d46-7ce876cedd0d" />
+
  ## 12- create a Deployment with
  name= deployment-1
  image= busybox
  replicas= 3
+ <img width="200" alt="image" src="https://github.com/user-attachments/assets/8652c791-6ded-448a-88b1-323095ec82e4" />
+ <br>
+<img width="381" alt="image" src="https://github.com/user-attachments/assets/720d09ff-48d3-4249-beac-06a28998cc51" />
+
  ## 13- How many Deployments and ReplicaSets exist on the system now?
+ <img width="312" alt="image" src="https://github.com/user-attachments/assets/8b983422-bef9-44c8-ae5f-162ce63e6488" />
+
  ## 14- How many pods are ready with the deployment-1?
+ <img width="331" alt="image" src="https://github.com/user-attachments/assets/eea5721c-ff20-4dee-999f-c20e94cc47e3" />
+
  ## 15- Update deployment-1 image to nginx then check the ready pods again
+ <img width="411" alt="image" src="https://github.com/user-attachments/assets/99c1a31f-de73-4a98-9d79-fb5ede9c6b89" />
+<br>
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/5329941a-d9aa-4855-bdf0-2ab4f9cd347b" />
+
  ## 16- Run kubectl describe deployment deployment-1 and check events
  What is the deployment strategy used to upgrade the deployment-1?
+ 
+<img width="388" alt="image" src="https://github.com/user-attachments/assets/9de26baf-7a52-4144-81c9-f08c8dcefb57" />
+<br>
+<img width="191" alt="image" src="https://github.com/user-attachments/assets/f1da2a21-2252-4107-a743-d0bcbb580828" />
+<br>
+ 
  ## 17- Rollback the deployment-1
  What is  the used image with the deployment-1?
+ <img width="442" alt="image" src="https://github.com/user-attachments/assets/f82f72b3-bfe0-4425-9647-5da812f82057" />
+
  ## 18- Create a deployment using nginx image with latest tag only and remember to
  mention tag i.e nginx:latest and name it as nginx-deployment. App labels should be
  app: nginx-app and type: front-end. The container should be named as
  nginx-container; also make sure replica counts are 3.
+ <img width="399" alt="image" src="https://github.com/user-attachments/assets/3348e193-35d2-49ee-b6b0-b4275c1b8a42" />
+<br>
+<img width="414" alt="image" src="https://github.com/user-attachments/assets/8fc58c92-84d7-4989-be17-9f5bb999d0cd" />
