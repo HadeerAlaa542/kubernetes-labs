@@ -64,10 +64,11 @@ Still the same because ReplicaSet checks on them all the time to ensure there ar
  name= deployment-1
  image= busybox
  replicas= 3
+ <br>
  <img width="200" alt="image" src="https://github.com/user-attachments/assets/8652c791-6ded-448a-88b1-323095ec82e4" />
  <br>
  <img width="381" alt="image" src="https://github.com/user-attachments/assets/720d09ff-48d3-4249-beac-06a28998cc51" />
-
+ <br>
  ## 13- How many Deployments and ReplicaSets exist on the system now?
  <img width="312" alt="image" src="https://github.com/user-attachments/assets/8b983422-bef9-44c8-ae5f-162ce63e6488" />
 
