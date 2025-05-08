@@ -227,13 +227,12 @@ kubectl get pods -A -o jsonpath="{range .items[*]}{.metadata.name}{'\t'}{.metada
 
 To find which **nodes** are running those static pods:
 
-![image](https://github.com/user-attachments/assets/436754e8-e490-4b62-abaf-ee2d7f2023c2)
-
 #### Command:
 
 ```bash
 kubectl get pods -A -o jsonpath="{range .items[*]}{.metadata.name}{'\t'}{.spec.nodeName}{'\t'}{.metadata.annotations.kubernetes\.io/config\.source}{'\n'}{end}" | grep file
 ```
+![image](https://github.com/user-attachments/assets/436754e8-e490-4b62-abaf-ee2d7f2023c2)
 
 #### Output Format:
 
