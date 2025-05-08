@@ -92,14 +92,12 @@ kubectl get nodes
 ## 🔍 5. Do you see any taints on master?
 
 ```bash
-kubectl describe node minikube | grep -i taint
+kubectl describe node controlplane | grep -i taint
 ```
 
 **Result:**
+![image](https://github.com/user-attachments/assets/7f0e8307-7e8b-495b-bc70-2f1af3d80d5e)
 
-```
-Taints: node-role.kubernetes.io/control-plane:NoSchedule
-```
 
 ✅ Master has a taint.
 
@@ -108,14 +106,16 @@ Taints: node-role.kubernetes.io/control-plane:NoSchedule
 ## 🏷️ 6. Apply a label `color=blue` to the master node
 
 ```bash
-kubectl label node minikube color=blue
+kubectl label node controlplane color=blue
 ```
+![image](https://github.com/user-attachments/assets/0231761e-814c-46de-b986-dc52370846bc)
 
 ✅ Verified with:
 
 ```bash
 kubectl get nodes --show-labels
 ```
+![image](https://github.com/user-attachments/assets/deb11150-c8c7-4244-9cb5-2bac0d9c2b0a)
 
 ---
 
