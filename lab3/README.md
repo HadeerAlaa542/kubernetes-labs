@@ -205,17 +205,49 @@ curl http://<NodeIP>:30082
 ```
 ![image](https://github.com/user-attachments/assets/3143512f-c44e-4546-a4ff-9af75bd3d1a6)
 
-### 12. Count static pods in all namespaces
+### 12. Count static pods in all namespaces**
+
+You can identify static pods using their annotation `kubernetes.io/config.source=file`.
+
+#### Command:
+
+```bash
+kubectl get pods -A -o jsonpath="{range .items[*]}{.metadata.name}{'\t'}{.metadata.annotations.kubernetes\.io/config\.source}{'\n'}{end}" | grep file | wc -l
+```
+![image](https://github.com/user-attachments/assets/ba568eb5-8acd-48d9-9a53-6bb87ff1e085)
+
+#### Explanation:
+
+* This filters all pods where the `config.source` is a file = **static pod**.
+* `wc -l` counts how many.
+
+---
+
+### 13. Identify nodes running static pods**
+
+To find which **nodes** are running those static pods:
+
+![image](https://github.com/user-attachments/assets/436754e8-e490-4b62-abaf-ee2d7f2023c2)
+
+#### Command:
+
+```bash
+kubectl get pods -A -o jsonpath="{range .items[*]}{.metadata.name}{'\t'}{.spec.nodeName}{'\t'}{.metadata.annotations.kubernetes\.io/config\.source}{'\n'}{end}" | grep file
+```
+
+#### Output Format:
+
+```
+<pod-name>    <node-name>    file
+```
+
+This tells you **which static pod** is running on **which node**.
+
+---
 
 
-
-### 13. Identify nodes running static pods
 
 
 ## Summary
 
 This lab demonstrated the use of core Kubernetes objects to orchestrate containerized applications. We deployed Pods, DaemonSets, Services, and Deployments, and learned how to test network communication between them.
-
-```
-
-
