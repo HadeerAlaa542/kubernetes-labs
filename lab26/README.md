@@ -15,8 +15,8 @@ Learn how to:
 
 ## 📁 Files
 
-- `nginx-deployment.yaml` — Initial deployment of NGINX with 3 replicas.
-- `nginx-service.yaml` — ClusterIP or NodePort service to expose NGINX.  
+- `Deployment.yaml` — Initial deployment of NGINX with 3 replicas.
+- `service.yaml` — ClusterIP or NodePort service to expose NGINX.  
 ---
 
 ## 🔧 Steps
