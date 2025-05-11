@@ -122,5 +122,3 @@ By the end of this lab, you should be comfortable with:
 * Managing updates in a Kubernetes deployment
 * Tracking changes through rollout history
 * Using rollback to restore stable versions
-
-```
